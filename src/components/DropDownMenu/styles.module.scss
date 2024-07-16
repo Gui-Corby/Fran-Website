@@ -1,0 +1,40 @@
+.dropdown_container {
+    display: flex;
+    position: relative;
+    display: inline-block;
+       
+    .work_container {
+        position: relative;
+    
+        button {
+        //   background-color: #f1f1f1;
+          color: black;
+        //   padding: 10px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+    
+    }  
+
+
+        .dropdown_menu {
+            position: absolute;
+            top: calc(100% + 5px);
+
+            li {
+                padding-bottom: 7px;
+            
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &:hover .dropdown_menu {
+            display: block;
+        }
+        }
+
+      
+        
+      }
