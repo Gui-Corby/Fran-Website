@@ -1,0 +1,89 @@
+.project_card {
+
+    overflow: hidden;
+
+    padding-top: 4rem;
+
+
+    display: flex;
+    justify-content: flex-start;
+   
+
+    .image_container {
+        position: relative;
+
+
+        img {
+            max-width: 100%;
+            display: block;
+            position: relative;
+            border-radius: 8px;
+            height: 190px;
+            width: 340px;
+
+        }
+
+        .gif_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            opacity: 0;
+            transition: opacity 0.25s;
+
+
+
+
+
+            &:hover {
+                opacity: 1;
+
+
+
+            }
+        }
+
+    }
+
+}
+
+
+
+@media (max-width: 425px) {
+
+    .project_card {
+
+        padding-top: 0;
+
+        .image_container {
+
+            img {
+              height: 105px;
+              width: 187px;
+            }
+
+        .gif_overlay {
+
+            .content {
+                display: flex;
+
+                span {
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+
+        }
+
+    }
+}

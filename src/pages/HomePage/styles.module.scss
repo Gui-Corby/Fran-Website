@@ -1,0 +1,24 @@
+@import "../../styles/grid.scss";
+
+.gifs_section {
+    @extend %grid_container;
+
+    .gifs_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 1rem;
+    }
+}
+
+@media (max-width:425px) {
+
+    .gifs_section {
+
+        .gifs_list {
+          grid-template-columns: repeat(2, 1fr);
+
+        }
+
+    }
+}

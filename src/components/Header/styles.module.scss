@@ -1,6 +1,6 @@
 @import "../../styles/grid.scss";
 
-.header_container {
+.header_section {
     @extend %grid_container;
 
     header {
@@ -17,4 +17,18 @@
         gap: 86px;
     }
 
+}
+
+@media (max-width: 425px) {
+    .header_section {
+        header {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                padding-top: 5rem;
+            }
+        }
+    }
 }

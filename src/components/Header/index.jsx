@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 export const Header = () => {
   return (
-    <section className={styles.header_container}>
+    <section className={styles.header_section}>
       <header>
         <Link to="/">
           <h1>Francis Corby Ceschin</h1>
