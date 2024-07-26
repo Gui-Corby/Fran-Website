@@ -7,6 +7,7 @@ export const ProjectCard = ({ gif, alt }) => {
   const projectName = alt
     .replace(/_/gi, " ")
     .replace(/^\w/, (c) => c.toUpperCase());
+
   return (
     <li className={styles.project_card}>
       <div className={styles.image_container}>

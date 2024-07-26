@@ -13,6 +13,10 @@ export const Header = () => {
         <div className={styles.header_right}>
           <DropdownMenu />
 
+          <Link to="/Equipment">
+            <button>Equipment</button>
+            </Link>
+
           <Link to="/ContactPage">
             <button>Contact</button>
           </Link>
