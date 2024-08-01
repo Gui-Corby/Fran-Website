@@ -5,13 +5,23 @@ export const ContactPage = () => {
   return (
     <>
       <main>
-        <section className={styles.contact_page_container}>
+        <section className={styles.contact_page_section}>
           <Header />
+          <div className={styles.contact_page_container}>
+            <span>Personal</span>
+            <p>francorbyceschin@gmail.com</p>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+};
 
-          <div className={styles.contact_middle}>
+{
+  /* <div className={styles.contact_middle}>
             <div className={styles.middle_left}>
               <p>Commercials + Music videos</p>
-              <p>Francis Ceschin</p>
+              <p className={styles.middle_name}>Francis Ceschin</p>
               <p>example@email.com</p>
             </div>
 
@@ -20,15 +30,5 @@ export const ContactPage = () => {
               <p>"Diff Person"</p>
             </div>
           </div>
-        </section>
-      </main>
-
-      <section className={styles.footer_container}>
-        <footer>
-          <span>Personal</span>
-          <p>francorbyceschin@gmail.com</p>
-        </footer>
-      </section>
-    </>
-  );
-};
+        </section> */
+}

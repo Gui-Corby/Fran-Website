@@ -1,0 +1,38 @@
+@import "../../../styles/grid.scss";
+@import "../../../styles/global.scss";
+
+.brazil_section {
+    @extend %grid_container;
+
+    h1 {
+        @extend %h1;
+    }
+
+    .content_photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+
+
+        margin-top: 3rem;
+            
+
+        img {
+            height: 300px;
+            width: 350px;
+            justify-self: center;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .brazil_section {
+        .content_photos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

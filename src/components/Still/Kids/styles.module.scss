@@ -1,0 +1,36 @@
+@import "../../../styles/grid.scss";
+
+.kids_section {
+    @extend %grid_container;
+
+    .content_photos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 30px;
+
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        img:nth-child(5) {
+            grid-column: 2 / 4;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .kids_section {
+        .content_photos {
+            grid-template-columns: 1fr;
+
+            img:nth-child(5) {
+                grid-column: auto;
+            }
+
+        }
+    }
+}

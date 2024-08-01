@@ -1,0 +1,43 @@
+@import "../../../styles/grid.scss";
+
+.NYFW_section {
+    @extend %grid_container;
+
+    h1 {
+        text-align: center;
+        color: #DAA520;
+        font-family: 'Bebas Neue';
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .content_gifs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .content_photos {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .NYFW_section {
+        .content_photos {
+           display: flex;
+           flex-wrap: wrap;
+        }
+    }
+}

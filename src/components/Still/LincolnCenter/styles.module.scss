@@ -1,0 +1,39 @@
+@import "../../../styles/grid.scss";
+
+.lincoln_center_section {
+ @extend %grid_container;
+
+    h1 {
+        text-align: center;
+        color: #DAA520;
+        font-family: 'Bebas Neue';
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .content_photos {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+        flex-wrap: wrap;
+        // grid-template-columns: repeat(2, 1fr);
+
+        img {
+            max-width: 100%;
+            margin-top: 3rem;
+            height: 300px;
+            width: 250px;
+            gap: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .content_gifs {
+        display: grid;
+        margin-top: 3rem;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

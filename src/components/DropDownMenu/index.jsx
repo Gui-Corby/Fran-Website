@@ -28,15 +28,13 @@ export const DropdownMenu = () => {
         <div className={styles.dropdown_container} onMouseLeave={handleMouseLeave}>
             <div className={styles.work_container} onMouseEnter={handleMouseEnter}>
                 <button>
-                    Work
+                    Menu
                 </button>
         
                 {isOpen && (
                 <ul className={styles.dropdown_menu}>
-                    <li><Link to="/commercial-mv">Commercial/MV</Link></li>
-                    <li><Link to="narrative">Narrative</Link></li>
-                    <li><Link to="/doc">Doc</Link></li>
-                    <li><Link to="/still">Still</Link></li>
+                    <li><Link to="/">Work</Link></li>
+                    <li><Link to='/otherPage'>Other</Link></li>
                 </ul>
             )}
             </div>

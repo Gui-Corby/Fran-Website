@@ -24,10 +24,20 @@
 
             li {
                 padding-bottom: 7px;
+                
+                
+                a {
+                    color: #DAA520;
+                }
             
 
             &:hover {
                 text-decoration: underline;
+                color: #DAA520;
+            }
+
+            &:active {
+                text-decoration: none;
             }
         }
         &:hover .dropdown_menu {

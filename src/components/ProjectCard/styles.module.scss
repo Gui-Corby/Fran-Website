@@ -12,6 +12,10 @@
     .image_container {
         position: relative;
 
+        &:hover {
+            cursor: pointer;
+        }
+
 
         img {
             max-width: 100%;
@@ -20,6 +24,8 @@
             border-radius: 8px;
             height: 190px;
             width: 340px;
+            cursor: pointer;
+
 
         }
 
