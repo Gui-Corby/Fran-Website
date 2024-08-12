@@ -1,14 +1,13 @@
 import { Header } from "../../components/Header";
 import styles from "./styles.module.scss";
 
-export const ContactPage = () => {
+export const Contact = () => {
   return (
     <>
       <main>
         <section className={styles.contact_page_section}>
           <Header />
           <div className={styles.contact_page_container}>
-            <span>Personal</span>
             <p>francorbyceschin@gmail.com</p>
           </div>
         </section>

@@ -73,8 +73,11 @@
         .image_container {
 
             img {
-              height: 105px;
-              width: 187px;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            //   height: 105px;
+            //   width: 187px;
             }
 
         .gif_overlay {

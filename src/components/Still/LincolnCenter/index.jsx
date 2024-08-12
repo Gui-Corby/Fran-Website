@@ -7,7 +7,7 @@ export const LincolnCenter = () => {
 
   return (
     <section className={styles.lincoln_center_section}>
-      <h1>Lincoln Center</h1>
+      <h1>Film at Lincoln Center</h1>
 
       <div className={styles.content}>
         <div className={styles.content_photos}>

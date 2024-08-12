@@ -7,7 +7,7 @@ import { NYC } from "../../components/Still/NYC";
 import { NYFashionWeek } from "../../components/Still/NYFashionWeek";
 
 
-export const OtherPage = () => {
+export const Other = () => {
   return (
     <>
       <Header />

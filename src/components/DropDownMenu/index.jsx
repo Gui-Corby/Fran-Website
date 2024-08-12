@@ -34,7 +34,7 @@ export const DropdownMenu = () => {
                 {isOpen && (
                 <ul className={styles.dropdown_menu}>
                     <li><Link to="/">Work</Link></li>
-                    <li><Link to='/otherPage'>Other</Link></li>
+                    <li><Link to='/Other'>Other</Link></li>
                 </ul>
             )}
             </div>
